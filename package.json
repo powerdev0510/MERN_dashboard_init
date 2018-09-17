@@ -1,0 +1,25 @@
+{
+  "name": "style-up",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run start --prefix frontend",
+    "server": "npm run dev --prefix backend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook --prefix backend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hogyun3709/style-up.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hogyun3709/style-up/issues"
+  },
+  "homepage": "https://github.com/hogyun3709/style-up#readme",
+  "dependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
